@@ -636,7 +636,10 @@ class charSeqRNN(object):
             cvIdx_all.append(cvIdx)
 
             synthDir = self.args['syntheticDatasetDir_'+str(dayIdx)]
-            recordFileSet = [os.path.join(synthDir, file) for file in os.listdir(synthDir)]
+            if os.path.isdir(synthDir):
+                recordFileSet = [os.path.join(synthDir, file) for file in os.listdir(synthDir)]
+            else:
+                recordFileSet = []
             
             if self.args['synthBatchSize']>0 and len(recordFileSet)==0:
                 sys.exit('Error! No synthetic files found in directory ' + self.args['syntheticDatasetDir_'+str(dayIdx)] + ', exiting.')
