@@ -3,7 +3,7 @@
 
 ## Overview
 
-This repo is associated with this [manuscript](https://www.biorxiv.org/content/10.1101/2020.07.01.183384v1.abstract) and [dataset](https://doi.org/10.5061/dryad.wh70rxwmv), and can be used to run an offline reproduction of the main result: high-performance neural decoding of attempted handwriting movements. The jupyter notebooks included here implement all steps of the process, including labeling the neural data with HMMs, training an RNN to decode the neural data into sequences of characters, applying a language model to the RNN outputs, and summarizing the performance on held-out data. 
+This repo is associated with this [manuscript](https://www.biorxiv.org/content/10.1101/2020.07.01.183384v1.abstract) and [dataset](https://doi.org/10.5061/dryad.wh70rxwmv) (note - the dataset is currently not publicly released, but should be available as soon as Data Dryad accepts the submission). The code can be used to run an offline reproduction of the main result: high-performance neural decoding of attempted handwriting movements. The jupyter notebooks included here implement all steps of the process, including labeling the neural data with HMMs, training an RNN to decode the neural data into sequences of characters, applying a language model to the RNN outputs, and summarizing the performance on held-out data. 
 
 Results from each step are saved to disk and used in future steps. Intermediate results and models are available [with the data](https://doi.org/10.5061/dryad.wh70rxwmv) - download these to explore certain steps without needing to run all prior ones (except for Step 3, which you'll need to run on your own because it produces ~100 GB of files). 
 
