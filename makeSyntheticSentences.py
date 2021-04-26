@@ -192,7 +192,7 @@ def makeSyntheticDataFromRawSnippets(charDef, charSnippets, nSentences, nSteps, 
             charLen = currentSnippet.shape[0]  
             nStepsForChar = np.round(charLen*0.7 + np.random.randint(charLen*0.6))
 
-            tau = np.linspace(0, currentSnippet.shape[0]-1, nStepsForChar)
+            tau = np.linspace(0, currentSnippet.shape[0]-1, int(nStepsForChar))
             tau = np.round(tau).astype(int)
             currentSnippet = currentSnippet[tau,:]
             
