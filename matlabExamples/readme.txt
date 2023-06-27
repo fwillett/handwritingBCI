@@ -1,0 +1,1 @@
+By popular demand, here are two MATLAB scripts that reproduce Fig. 1d (letter reconstructions) and Fig. 1e (tSNE plot and k-NN classification). See "tsneAndKNNExample.m" for tSNE plot and k-NN classifier, and "handwritingReconstructionExample.m" for handwriting reconstructions. "gaussSmooth_fast.m" and "tsneWarpDist.m" are helper functions that should be on the MATLAB code path. 
